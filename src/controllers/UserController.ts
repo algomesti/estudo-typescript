@@ -1,14 +1,12 @@
 import {Request, Response} from 'express';
 import EmailService from '../services/EmailService';
 import slotModel from '../models/Slot';
-import size from '../utils/enumarates/size';
-import typeOfCardsAllowed from '../utils/enumarates/typeOfCardsAllowed';
+import size from '../utils/enumarates/SizeSlot';
+import typeOfCardsAllowed from '../utils/enumarates/TypeOfCardsAllowed';
 
 const users = {
     nome: 'Alexandre', email: 'algomes.ti@gmail.com'
 };
-
-
 
 const slot = new slotModel({
     title : "Escudo",
@@ -21,6 +19,7 @@ const slot = new slotModel({
         typeOfCardsAllowed.Defense
     ]
 });
+
 
 console.log(slot);
 
