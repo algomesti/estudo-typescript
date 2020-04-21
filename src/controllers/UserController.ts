@@ -1,10 +1,28 @@
 import {Request, Response} from 'express';
 import EmailService from '../services/EmailService';
+import slotModel from '../models/Slot';
+import size from '../utils/enumarates/size';
+import typeOfCardsAllowed from '../utils/enumarates/typeOfCardsAllowed';
 
 const users = {
     nome: 'Alexandre', email: 'algomes.ti@gmail.com'
 };
 
+
+
+const slot = new slotModel({
+    title : "Escudo",
+    size : [
+        size.Big,
+        size.Medium
+    ],
+    typesOfCardsAllowed : [
+        typeOfCardsAllowed.Attack,
+        typeOfCardsAllowed.Defense
+    ]
+});
+
+console.log(slot);
 
 export default {
     async index(req: Request, res: Response) {

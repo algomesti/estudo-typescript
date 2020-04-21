@@ -7,7 +7,6 @@ var express_1 = require("express");
 var UserController_1 = __importDefault(require("./controllers/UserController"));
 var routes = express_1.Router();
 routes.get('/', function (req, res) {
-    res.setHeader('Access-Control-Allow-Origin', '*');
     return res.send('Hello World !!');
 });
 routes.get('/users', UserController_1.default.index);
