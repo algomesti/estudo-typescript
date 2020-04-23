@@ -8,9 +8,15 @@ namespace PivoInterfaces {
         imageUrl: string,
         description: string,
         pivo: pivo.Pivo,
+        slotManager: slotManager,
 
         equipSlot(): boolean,
         unEquipSlot(): boolean,
+
+        getForce(): number,
+        getDefense(): number,
+        getFatigue(): number,
+
     }
 }
 

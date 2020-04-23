@@ -1,7 +1,7 @@
 
 import personInterface from '../Person';
 
-import slotInterface from '../Slot';
+import slotInterface from '../SlotType';
 
 namespace PivoInterfacePerson {
 

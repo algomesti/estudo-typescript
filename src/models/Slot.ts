@@ -1,6 +1,6 @@
 import sizeEnumerate from "../utils/enumarates/SizeSlot";
 import typeOfCardsAllowed from "../utils/enumarates/TypeOfCardsAllowed";
-import PivoInterfaces from "../utils/interfaces/Slot";
+import PivoInterfaces from "../utils/interfaces/SlotType";
 
 const round = {
     opponentAttack: number,

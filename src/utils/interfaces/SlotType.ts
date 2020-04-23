@@ -1,20 +1,11 @@
-import sizeSlot from '../enumarates/SizeSlot';
+import slot from '../enumarates/SizeSlot';
 import typeOfCardsAllowed from '../enumarates/TypeOfCardsAllowed';
-import card from '../classes/Card';
 
 namespace PivoInterfaces {
 
-    export interface Slot {
+    export interface SlotTypes {
 
         title: string;
-        size: sizeSlot;
-        card: card,
-
-        add(card: card): boolean;
-        remove(): boolean;
-        getType(): typeOfCardsAllowed,
-        execute(command:string): any
-
     }
 
     export interface SlotHead extends SlotTypes {
